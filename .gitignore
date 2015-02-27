@@ -2,6 +2,7 @@
 *.xhtml
 *.xbundle
 *.py[cod]
+*.swp
 
 tmp.xml
 
