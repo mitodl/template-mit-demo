@@ -1,7 +1,7 @@
 #!/bin/env python
 # -*- coding: utf-8 -*-
 """
-A script to generate a template course with the proper name, term and
+A script to generate a template cousre with the proper name, term and
 course number.
 """
 
@@ -22,16 +22,23 @@ tex_env = Environment(
 )
 
 paths = {
-    'course.xml': '../../{0}.xml',
-    'term.xml': '../../policies/course/{0}.xml',
-    'policy.json': '../../policies/{0}/policy.json',
-    'course.tex': '../course.tex'
+    'course.xml': '../../course.xml',
+    'term.xml': '../../policies/course/{term}.xml',
+    'policy.json': '../../policies/{term}/policy.json',
+    'mitx.tex': '../mitx.tex'
 }
 
-for path in paths.keys():
-    if path.split('.')[1] == 'tex':
-        template = tex_env.get_template(path)
+course = {
+    'term': '2015_Summer',
+    'name': 'Test Course',
+    'org': 'MITx',
+    'number': '0.001'
+}
+
+for tmp_name in paths.keys():
+    if tmp_name.split('.')[1] == 'tex':
+        template = tex_env.get_template(tmp_name)
     else:
-        template = env.get_template(path)
-    output_file = open(paths[path], 'w')
+        template = env.get_template(tmp_name)
+    output_file = open(paths[tmp_name].format(course), 'w')
     output_file.write(template.render(course))
