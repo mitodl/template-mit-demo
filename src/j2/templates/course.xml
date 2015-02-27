@@ -1,0 +1,1 @@
+<course {{ {'url_name': course['term'], 'org': course['org'], 'course': course['number']}|xmlattr }} />
