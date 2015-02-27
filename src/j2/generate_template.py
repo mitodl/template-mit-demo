@@ -28,10 +28,10 @@ paths = {
     'mitx.tex': '../mitx.tex'
 }
 
-for key in paths.keys():
-    if key.split('.')[1] == 'tex':
-        template = tex_env.get_template(key)
+for path in paths.keys():
+    if path.split('.')[1] == 'tex':
+        template = tex_env.get_template(path)
     else:
-        template = env.get_template(key)
-    output_file = open(paths[key], 'w')
+        template = env.get_template(path)
+    output_file = open(paths[path], 'w')
     output_file.write(template.render(course))

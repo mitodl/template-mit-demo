@@ -3,6 +3,7 @@
 *.xbundle
 *.py[cod]
 *.swp
+.rope*
 
 tmp.xml
 
