@@ -1,7 +1,7 @@
 #!/bin/env python
 # -*- coding: utf-8 -*-
 """
-A script to generate a template cousre with the proper name, term and
+A script to generate a template course with the proper name, term and
 course number.
 """
 
@@ -25,7 +25,7 @@ paths = {
     'course.xml': '../../{0}.xml',
     'term.xml': '../../policies/course/{0}.xml',
     'policy.json': '../../policies/{0}/policy.json',
-    'mitx.tex': '../mitx.tex'
+    'course.tex': '../course.tex'
 }
 
 for path in paths.keys():
