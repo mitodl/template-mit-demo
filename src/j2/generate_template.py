@@ -23,8 +23,8 @@ tex_env = Environment(
 
 paths = {
     'course.xml': '../../course.xml',
-    'term.xml': '../../policies/course/{term}.xml',
-    'policy.json': '../../policies/{term}/policy.json',
+    'term.xml': '../../policies/course/{0[term]}.xml',
+    'policy.json': '../../policies/{0[term]}/policy.json',
     'mitx.tex': '../mitx.tex'
 }
 
@@ -42,3 +42,4 @@ for tmp_name in paths.keys():
         template = env.get_template(tmp_name)
     output_file = open(paths[tmp_name].format(course), 'w')
     output_file.write(template.render(course))
+    output_file.close()
