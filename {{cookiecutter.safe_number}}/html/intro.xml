@@ -1,0 +1,9 @@
+<html display_name="intro" attrib_string="">
+  <p>
+      Welcome to {{ cookiecutter.name }}! </p>
+  <p>
+This course was compiled by the capabilities of the latex2edx system, [mathjaxinline]\LaTeX[/mathjaxinline] into XML code for edX courses. </p>
+  <p>
+The focus of this system is on providing sophisticated auto-gradable science, technology, engineering, and math (STEM) problems, by extending a document preparation system to provide interactive &#x201C;answer boxes" for student input and auto-grader responses. </p>
+
+</html>

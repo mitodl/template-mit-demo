@@ -1,0 +1,9 @@
+{
+    "term":"2015SP",
+    "name":"MITx Demonstration Course",
+    "safe_number":"00000",
+    "number":"00.000",
+    "org": "MITx",
+    "description": "Welcome to MITx!",
+    "course_image": "path/to/image"
+}
