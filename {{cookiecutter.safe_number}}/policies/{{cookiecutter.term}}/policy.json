@@ -1,17 +1,16 @@
 {
-    "chapter/Basic_examples": {
-        "start": "2030-01-30T00:00"
-    },
-    "chapter/Problem_set_99": {
-        "start": "2030-01-30T00:00"
-    },
     "course/{{ cookiecutter.term }}": {
         "allow_anonymous": false,
         "allow_anonymous_to_peers": true,
         "attempts": 10,
         "diplay_name": "{{ cookiecutter.name }}",
-        "display_coursenumber": "{{ cookiecutter.number }}",
+        {%if cookiecutter.number[-1] == 'r' %}
+        "display_coursenumber": "{{ cookiecutter.number[::-1] }}",
         "display_organization": "MIT",
+        {% else %}
+        "display_coursenumber": "{{ cookiecutter.number }}",
+        "display_organization": "MITx",
+        {% endif %}
         "end": "2130-01-30T00:00",
         "enrollment_end": "2130-01-30T00:00",
         "graceperiod": "0 day 0 hours 15 minutes 0 seconds",
