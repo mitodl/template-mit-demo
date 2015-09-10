@@ -1,10 +1,4 @@
 {
-    "chapter/Basic_examples": {
-        "start": "2030-01-30T00:00"
-    },
-    "chapter/Problem_set_99": {
-        "start": "2030-01-30T00:00"
-    },
     "course/{{ cookiecutter.term }}": {
         "allow_anonymous": false,
         "allow_anonymous_to_peers": true,
@@ -14,6 +8,7 @@
         "display_organization": "MIT",
         "end": "2130-01-30T00:00",
         "enrollment_end": "2130-01-30T00:00",
+        "giturl" : "{{ cookiecutter.giturl }}",
         "graceperiod": "0 day 0 hours 15 minutes 0 seconds",
         "ispublic": true,
         "rerandomize": "once",
@@ -31,15 +26,192 @@
                 "name": "Progress",
                 "type": "progress"
             }
+        ],
+        "checklists": [
+            {
+                "items": [
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Team",
+                        "action_url": "ManageUsers",
+                        "is_checked": false,
+                        "long_description": "Grant your collaborators permission to edit your course so you can work together.",
+                        "short_description": "Add Course Team Members"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Details &amp; Schedule",
+                        "action_url": "SettingsDetails",
+                        "is_checked": false,
+                        "long_description": "Establish your course's student enrollment and launch dates on the Schedule and Details page.",
+                        "short_description": "Set Important Dates for Your Course"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Create a Stellar Course",
+                        "action_url": "http://stellar.mit.edu/SR/",
+                        "long_description": "Create a Stellar course if you would like to pull student enrollment or push gradebook results from/to the registrar.",
+                        "short_description": "Create a Stellar Course to Integrate Registrar Data."
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Grading Settings",
+                        "action_url": "SettingsGrading",
+                        "is_checked": false,
+                        "long_description": "Set up your assignment types and grading policy even if you haven't created all your assignments.",
+                        "short_description": "Draft Your Course's Grading Policy"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Add a course image",
+                        "action_url": "SettingsDetails",
+                        "is_checked": false,
+                        "long_description": "Discover other available course authoring tools, and find help when you need it.",
+                        "short_description": "Explore the Other Studio Checklists"
+                    }
+                ],
+                "short_description": "Getting Started With Studio"
+            },
+            {
+                "items": [
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Outline",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Use your course outline to build your first Section and Subsection.",
+                        "short_description": "Create Your First Section and Subsection"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Outline",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Specify the release dates for each Section in your course. Sections become visible to students on their release dates.",
+                        "short_description": "Set Section Release Dates"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Outline",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Set a Subsection to be graded as a specific assignment type. Assignments within graded Subsections count toward a student's final grade.",
+                        "short_description": "Designate a Subsection as Graded"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Outline",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Use drag and drop to reorder the content in your course.",
+                        "short_description": "Reordering Course Content"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Outline",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Rename Sections by clicking the Section name from the Course Outline.",
+                        "short_description": "Renaming Sections"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Outline",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Delete Sections, Subsections, or Units you don't need anymore. Be careful, as there is no Undo function.",
+                        "short_description": "Deleting Course Content"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Outline",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Some course authors find using a section for unsorted, in-progress work useful. To do this, create a section and set the release date to the distant future.",
+                        "short_description": "Add an Instructor-Only Section to Your Outline"
+                    }
+                ],
+                "short_description": "Draft a Rough Course Outline"
+            },
+            {
+                "items": [
+                    {
+                        "action_external": true,
+                        "action_text": "Visit MITx documentation",
+                        "action_url": "https://odl.zendesk.com/hc/en-us",
+                        "is_checked": false,
+                        "long_description": "The MITx Knowledge Base contains useful information for course authors, specifically in the Studio and General sections.",
+                        "short_description": "Access the MITx Knowledge Base."
+                    },
+                    {
+                        "action_external": true,
+                        "action_text": "Visit OpenEdX documentation",
+                        "action_url": "http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/building_course/index.html",
+                        "is_checked": false,
+                        "long_description": "Visit the searchable Studio reference documentation in your browser.",
+                        "short_description": "Visit the Studio Documentation"
+                    }
+                ],
+                "short_description": "Explore Documentation"
+            },
+            {
+                "items": [
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Schedule &amp; Details",
+                        "action_url": "SettingsDetails",
+                        "is_checked": false,
+                        "long_description": "Courses on edX have an About page that includes a course video, description, and more. Draft the text students will read before deciding to enroll in your course.",
+                        "short_description": "Draft a Course Description"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Schedule &amp; Details",
+                        "action_url": "SettingsDetails",
+                        "is_checked": false,
+                        "long_description": "Showing prospective students who their instructor will be is helpful. Include staff bios on the course About page.",
+                        "short_description": "Add Staff Bios"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Schedule &amp; Details",
+                        "action_url": "SettingsDetails",
+                        "is_checked": false,
+                        "long_description": "Include a short list of frequently asked questions about your course.",
+                        "short_description": "Add Course FAQs"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Schedule &amp; Details",
+                        "action_url": "SettingsDetails",
+                        "is_checked": false,
+                        "long_description": "Let students know what knowledge and/or skills they should have before they enroll in your course.",
+                        "short_description": "Add Course Prerequisites"
+                    }
+                ],
+                "short_description": "Draft Your Course About Page"
+            },
+            {
+                "items": [
+                    {
+                        "action_external": false,
+                        "action_text": "Check Published Status",
+                        "action_url": "CourseOutline",
+                        "is_checked": false,
+                        "long_description": "Make sure that all content you want students to see is released",
+                        "short_description": "Check Published Status"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "",
+                        "action_url": "",
+                        "is_checked": false,
+                        "long_description": "Use the Export to Git feature from Settings>Export to Git when you're ready to update the student-facing site.",
+                        "short_description": "Publish to LMS"
+                    }
+                ],
+                "short_description": "Publish your Course"
+            }
         ]
-    },
-    "sequential/Basic_example_problems": {
-        "attempts": "10",
-        "due": "2130-01-30T00:00",
-        "format": "EX",
-        "graceperiod": "5 hours",
-        "graded": "true",
-        "showanswer": "closed",
-        "start": "2030-01-30T00:00"
     }
 }
