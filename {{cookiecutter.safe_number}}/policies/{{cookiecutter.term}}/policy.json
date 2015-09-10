@@ -4,15 +4,15 @@
         "allow_anonymous_to_peers": true,
         "attempts": 10,
         "diplay_name": "{{ cookiecutter.name|title }}",
-        {%if cookiecutter.number[-1] == 'x' %}
-        "display_coursenumber": "{{ cookiecutter.number }}",
-        "display_organization": "MITx",
-        {%if cookiecutter.number[-1] == 'r' %}
+        {% if cookiecutter.number[-1] == 'r' %}
         "display_coursenumber": "{{ cookiecutter.number[::-1] }}",
         "display_organization": "MIT",
         {% elif 'r_' in cookiecutter.number %}
         "display_coursenumber": "{{ cookiecutter.number[::-3] }}",
         "display_organization": "MIT",
+        {% else %}
+        "display_coursenumber": "{{ cookiecutter.number }}",
+        "display_organization": "MITx",
         {% endif %}
         "end": "2130-01-30T00:00",
         "enrollment_end": "2130-01-30T00:00",
