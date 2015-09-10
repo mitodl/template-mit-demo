@@ -1,19 +1,9 @@
 {
     "course/{{ cookiecutter.term }}": {
-        "allow_anonymous": false,
-        "allow_anonymous_to_peers": true,
-        "attempts": 10,
         "diplay_name": "{{ cookiecutter.name }}",
         "display_coursenumber": "{{ cookiecutter.number }}",
         "display_organization": "MIT",
-        "end": "2130-01-30T00:00",
-        "enrollment_end": "2130-01-30T00:00",
         "giturl" : "{{ cookiecutter.giturl }}",
-        "graceperiod": "0 day 0 hours 15 minutes 0 seconds",
-        "ispublic": true,
-        "rerandomize": "once",
-        "showanswer": "attempted",
-        "start": "2030-01-30T00:00",
         "tabs": [
             {
                 "type": "courseware"
@@ -21,10 +11,6 @@
             {
                 "name": "Course Info",
                 "type": "course_info"
-            },
-            {
-                "name": "Progress",
-                "type": "progress"
             }
         ],
         "checklists": [
