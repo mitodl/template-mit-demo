@@ -5,10 +5,10 @@
         "attempts": 10,
         "diplay_name": "{{ cookiecutter.name|title }}",
         {% if cookiecutter.number[-1] == 'r' %}
-        "display_coursenumber": "{{ cookiecutter.number[::-1] }}",
+        "display_coursenumber": "{{ cookiecutter.number[:-1] }}",
         "display_organization": "MIT",
         {% elif 'r_' in cookiecutter.number %}
-        "display_coursenumber": "{{ cookiecutter.number[::-3] }}",
+        "display_coursenumber": "{{ cookiecutter.number[:-3] }}",
         "display_organization": "MIT",
         {% else %}
         "display_coursenumber": "{{ cookiecutter.number }}",
