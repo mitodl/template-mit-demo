@@ -34,14 +34,5 @@
                 "type": "progress"
             }
         ]
-    },
-    "sequential/Basic_example_problems": {
-        "attempts": "10",
-        "due": "2130-01-30T00:00",
-        "format": "EX",
-        "graceperiod": "5 hours",
-        "graded": "true",
-        "showanswer": "closed",
-        "start": "2030-01-30T00:00"
     }
 }
