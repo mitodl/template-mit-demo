@@ -7,6 +7,9 @@
         {%if cookiecutter.number[-1] == 'x' %}
         "display_coursenumber": "{{ cookiecutter.number }}",
         "display_organization": "MITx",
+        {%if cookiecutter.number[-1] == 'r' %}
+        "display_coursenumber": "{{ cookiecutter.number[::-1] }}",
+        "display_organization": "MIT",
         {% elif 'r_' in cookiecutter.number %}
         "display_coursenumber": "{{ cookiecutter.number[::-3] }}",
         "display_organization": "MIT",
