@@ -5,5 +5,6 @@
     "number":"00.000",
     "org": "MITx",
     "description": "Welcome to MITx!",
-    "course_image": "path/to/image"
+    "course_image": "path/to/image",
+    "giturl": ""
 }
