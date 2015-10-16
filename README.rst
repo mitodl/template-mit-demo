@@ -4,8 +4,7 @@ content-mit-{{ cookiecutter.safe_number }}
 Template MITx course
 
 This repository contains an example edX course that can be generated via
-`latex2edx <https://github.com/mitocw/latex2edx>`__, edited by xml, or
-imported & edited through studio.
+`latex2edx <https://github.com/mitocw/latex2edx>`__ or edited by xml.
 
 LaTeX Compliation Files
 =======================
