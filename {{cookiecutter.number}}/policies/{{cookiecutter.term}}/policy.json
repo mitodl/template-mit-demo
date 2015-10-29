@@ -1,8 +1,19 @@
 {
     "course/{{ cookiecutter.term }}": {
         "diplay_name": "{{ cookiecutter.name }}",
-        "display_coursenumber": "{{ cookiecutter.number }}",
+        {% if cookiecutter.number[-1] == 'r' %}
+        "display_coursenumber": "{{ cookiecutter.number[:-1] }}",
         "display_organization": "MIT",
+        {% elif 'r_' in cookiecutter.number %}
+        "display_coursenumber": "{{ cookiecutter.number[:-3] }}",
+        "display_organization": "MIT",
+        {% elif 'x_' in cookiecutter.number %}
+        "display_coursenumber": "{{ cookiecutter.number[:-2] }}",
+        "display_organization": "MITx",
+        {% else %}
+        "display_coursenumber": "{{ cookiecutter.number }}",
+        "display_organization": "MITx",
+        {% endif %}
         "giturl" : "{{ cookiecutter.giturl }}",
         "course_image": "course_image.png",
         "tabs": [
