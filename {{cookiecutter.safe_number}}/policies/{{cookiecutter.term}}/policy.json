@@ -4,6 +4,7 @@
         "display_coursenumber": "{{ cookiecutter.number }}",
         "display_organization": "MIT",
         "giturl" : "{{ cookiecutter.giturl }}",
+        "course_image": "course_image.png",
         "tabs": [
             {
                 "type": "courseware"
