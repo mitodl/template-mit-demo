@@ -1,4 +1,4 @@
-content-mit-{{ cookiecutter.safe_number }}
+content-mit-{{ cookiecutter.safe_number }}-{{ cookiecutter.term }}
 =======================
 
 {{ cookiecutter.name|title }}
