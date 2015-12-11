@@ -2,6 +2,7 @@ content-mit-{{ cookiecutter.safe_number }}-{{ cookiecutter.term }}
 =======================
 
 {{ cookiecutter.name|title }}
+
 {{ cookiecutter.description }}
 
 This repository has two separate branches hooked to two separate courses, as follows:
