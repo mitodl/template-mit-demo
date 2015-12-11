@@ -1,5 +1,6 @@
 {
     "course/{{ cookiecutter.term }}": {
+        "course_image": "course_image.png",
         "diplay_name": "{{ cookiecutter.name|title }}",
         {% if cookiecutter.number[-1] == 'r' %}
         "display_coursenumber": "{{ cookiecutter.number[:-1] }}",
