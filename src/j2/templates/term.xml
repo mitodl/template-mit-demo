@@ -1,5 +1,0 @@
-<course number="{{ course['number'] }}" display_name="{{ course['name'] }}" semester="{{ course['term'] }}" org="MITx">
-  <chapter url_name="Introduction"/>
-  <chapter url_name="Basic_examples"/>
-  <chapter url_name="Advanced_Examples"/>
-</course>
