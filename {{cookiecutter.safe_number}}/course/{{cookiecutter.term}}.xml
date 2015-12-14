@@ -1,5 +1,0 @@
-<course number="{{ cookiecutter.number }}" display_name="{{ cookiecutter.name }}" semester="{{ cookiecutter.term }}" org="MITx">
-  <chapter url_name="Introduction"/>
-  <chapter url_name="Basic_examples"/>
-  <chapter url_name="Advanced_Examples"/>
-</course>
