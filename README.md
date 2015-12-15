@@ -12,7 +12,7 @@ Branch | Description
 
 ## Usage
 
-To use these repositories you will need to have [cookiecutter](audreyr/cookiecutter@master) installed:
+To use these repositories you will need to have [cookiecutter](https://github.com/audreyr/cookiecutter/tree/master/cookiecutter) installed:
 
 ```sh
 $ pip install cookiecutter
@@ -24,4 +24,4 @@ Then you'll just want to use cookiecutter to check out this repository at the ne
 $ cookiecutter https://github.com/mitodl/template-mit-demo.git --checkout studio
 ```
 
-You'll be prompted for a few pieces of information, and then your course will be created.
+You'll be prompted for a few pieces of information, and your template course will be created.
