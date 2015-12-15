@@ -12,7 +12,7 @@ Branch | Description
 
 ## Usage
 
-To use these repositories you will need to have cookiecutter[audreyr/cookiecutter@master] installed:
+To use these repositories you will need to have [cookiecutter](audreyr/cookiecutter@master) installed:
 
 ```sh
 $ pip install cookiecutter
