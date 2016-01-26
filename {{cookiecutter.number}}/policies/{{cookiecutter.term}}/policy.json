@@ -4,9 +4,11 @@
         {% if cookiecutter.number[-1] == 'r' %}
         "display_coursenumber": "{{ cookiecutter.number[:-1] }}",
         "display_organization": "MIT",
+        "giturl" : "{{ cookiecutter.giturl }}",
         {% elif 'r_' in cookiecutter.number %}
         "display_coursenumber": "{{ cookiecutter.number[:-3] }}",
         "display_organization": "MIT",
+        "giturl" : "{{ cookiecutter.giturl }}",
         {% elif 'x_' in cookiecutter.number %}
         "display_coursenumber": "{{ cookiecutter.number[:-2] }}",
         "display_organization": "MITx",
@@ -14,7 +16,7 @@
         "display_coursenumber": "{{ cookiecutter.number }}",
         "display_organization": "MITx",
         {% endif %}
-        "giturl" : "{{ cookiecutter.giturl }}",
+        "days_early_beta": 7,
         "course_image": "course_image.png",
         "tabs": [
             {
@@ -23,6 +25,22 @@
             {
                 "name": "Course Info",
                 "type": "course_info"
+            },
+            {
+                "name": "Discussion",
+                "type": "discussion",
+                "is_hidden": true
+            },
+            {
+                "wiki": "Wiki",
+                "type": "wiki",
+                "is_hidden": true
+            },
+            {
+                "name": "Schedule",
+                "type": "static_tab",
+                "url_slug": "schedule",
+                "is_hidden": true
             }
         ],
         "checklists": [
@@ -127,6 +145,14 @@
                         "is_checked": false,
                         "long_description": "Some course authors find using a section for unsorted, in-progress work useful. To do this, create a section and set the release date to the distant future.",
                         "short_description": "Add an Instructor-Only Section to Your Outline"
+                    },
+                    {
+                        "action_external": false,
+                        "action_text": "Edit Course Schedule Page",
+                        "action_url": "/tabs/{{ cookiecutter.org }}/{{ cookiecutter.number }}/{{ cookiecutter.term }}",
+                        "is_checked": false,
+                        "long_description": "Let students know what to expect for each Session in your course.",
+                        "short_description": "Edit Schedule Page"
                     }
                 ],
                 "short_description": "Draft a Rough Course Outline"
