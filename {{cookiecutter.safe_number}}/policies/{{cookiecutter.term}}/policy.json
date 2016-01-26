@@ -11,6 +11,7 @@
         "display_coursenumber": "{{ cookiecutter.number }}",
         "display_organization": "MITx",
         {% endif %}
+        "course_image": "course_image.png",
         "end": "2130-01-30T00:00",
         "enrollment_end": "2130-01-30T00:00",
         "graceperiod": "0 day 0 hours 15 minutes 0 seconds",
