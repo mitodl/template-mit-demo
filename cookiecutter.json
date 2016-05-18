@@ -1,5 +1,6 @@
 {
     "term":"2016_Spring",
+    "safe_term":"{{ cookiecutter.term|replace('_', '-')|replace('.', '-')|replace(' ', '-') }}",
     "name":"MITx Demonstration Course",
     "number":"0.000r_1",
     "safe_number":"{{ cookiecutter.number|replace('_', '-')|replace('.', '-')|replace(' ', '-') }}",

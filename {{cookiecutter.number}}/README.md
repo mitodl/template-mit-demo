@@ -1,7 +1,7 @@
-content-mit-{{ cookiecutter.safe_number }}-{{ cookiecutter.term }}
+content-mit-{{ cookiecutter.safe_number }}-{{ cookiecutter.safe_term }}
 =======================
 
-{{ cookiecutter.name|title }}
+#{{ cookiecutter.name|title }}
 
 {{ cookiecutter.description }}
 
