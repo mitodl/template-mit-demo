@@ -1,4 +1,4 @@
-content-mit-{{ cookiecutter.safe_number }}
+template-mit-demo
 =====================================
 
 Template MITx course
