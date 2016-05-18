@@ -1,8 +1,8 @@
 {
     "term":"2016_Spring",
     "name":"MITx Demonstration Course",
-    "safe_number":"00000r",
     "number":"0.000r_1",
+    "safe_number":"{{ cookiecutter.number|replace('_', '-')|replace('.', '-')|replace(' ', '-') }}",
     "org": "MITx",
     "description": "Welcome to MITx!"
 }
