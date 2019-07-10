@@ -20,27 +20,24 @@
         "course_image": "course_image.png",
         "tabs": [
             {
+                "course_staff_only": false, 
+                "name": "Course", 
                 "type": "courseware"
-            },
+            }, 
             {
-                "name": "Course Info",
-                "type": "course_info"
-            },
+                "course_staff_only": false, 
+                "name": "Discussion", 
+                "type": "discussion"
+            }, 
             {
-                "name": "Discussion",
-                "type": "discussion",
-                "is_hidden": true
-            },
+                "course_staff_only": false, 
+                "name": "Wiki", 
+                "type": "wiki"
+            }, 
             {
-                "wiki": "Wiki",
-                "type": "wiki",
-                "is_hidden": true
-            },
-            {
-                "name": "Schedule",
-                "type": "static_tab",
-                "url_slug": "schedule",
-                "is_hidden": true
+                "course_staff_only": false, 
+                "name": "Progress", 
+                "type": "progress"
             }
         ],
         "checklists": [
