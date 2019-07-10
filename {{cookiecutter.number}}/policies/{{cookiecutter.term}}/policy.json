@@ -19,11 +19,24 @@
         "start": "2030-01-30T00:00",
         "tabs": [
             {
+                "course_staff_only": false, 
+                "name": "Course", 
                 "type": "courseware"
-            },
+            }, 
             {
-                "name": "Course Info",
-                "type": "course_info"
+                "course_staff_only": false, 
+                "name": "Discussion", 
+                "type": "discussion"
+            }, 
+            {
+                "course_staff_only": false, 
+                "name": "Wiki", 
+                "type": "wiki"
+            }, 
+            {
+                "course_staff_only": false, 
+                "name": "Progress", 
+                "type": "progress"
             }
         ]
     }
